@@ -19,7 +19,7 @@ pipeline {
     stage('Unit Tests') {
       steps{
         script {
-          sh 'npm install -g npm'
+          sh 'npm install -g'
 	  sh 'npm test -- --watchAll=false'
         }
       }
