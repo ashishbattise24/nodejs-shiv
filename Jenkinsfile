@@ -4,13 +4,13 @@ pipeline {
         AWS_ACCOUNT_ID="917734380283"
         AWS_DEFAULT_REGION="ap-southeast-1" 
 	CLUSTER_NAME="node-cluster"
-	SERVICE_NAME="node-service"
-	TASK_DEFINITION_NAME="CHANGE_ME"
-	DESIRED_COUNT="CHANGE_ME"
-        IMAGE_REPO_NAME="CHANGE_ME"
+	SERVICE_NAME="sample-app-service"
+	TASK_DEFINITION_NAME='first-run-task-definition:2'"
+	DESIRED_COUNT="1"
+        IMAGE_REPO_NAME="nodejs-repo"
         IMAGE_TAG="${env.BUILD_ID}"
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
-	registryCredential = "CHANGE_ME"
+	registryCredential = "nodejs-cred"
     }
    
     stages {
