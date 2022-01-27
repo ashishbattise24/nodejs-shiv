@@ -1,10 +1,10 @@
 pipeline {
     agent any
     environment {
-        AWS_ACCOUNT_ID="CHANGE_ME"
-        AWS_DEFAULT_REGION="CHANGE_ME" 
-	CLUSTER_NAME="CHANGE_ME"
-	SERVICE_NAME="CHANGE_ME"
+        AWS_ACCOUNT_ID="917734380283"
+        AWS_DEFAULT_REGION="ap-southeast-1" 
+	CLUSTER_NAME="node-cluster"
+	SERVICE_NAME="node-service"
 	TASK_DEFINITION_NAME="CHANGE_ME"
 	DESIRED_COUNT="CHANGE_ME"
         IMAGE_REPO_NAME="CHANGE_ME"
