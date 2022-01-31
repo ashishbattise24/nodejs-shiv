@@ -14,7 +14,7 @@ pipeline {
     }
    
    docker {
-     nodejs 'nodejs'
+     NodeJs 'nodejs'
    }	
 	
     stages {
