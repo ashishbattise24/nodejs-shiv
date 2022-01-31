@@ -22,6 +22,8 @@ pipeline {
     // Tests
     stage('Unit Tests') {
       steps{
+         dir('$WORKSPACE/jayesh2/package.json') {
+    }
         script {
           sh 'npm install -g'
 	  sh 'npm test'
