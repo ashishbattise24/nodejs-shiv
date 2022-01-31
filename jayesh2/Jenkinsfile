@@ -22,12 +22,14 @@ pipeline {
     // Tests
     stage('Unit Tests') {
       steps{
-         dir('$WORKSPACE/jayesh2/package.json') {
-    }
-        script {
+         dir('$WORKSPACE/jayesh2/') {
+          script {
           sh 'npm install -g'
 	  sh 'npm test'
         }
+		 
+    }
+        
       }
     }
         
