@@ -22,7 +22,7 @@ pipeline {
     // Tests
     stage('Unit Tests') {
       steps{
-         dir('$WORKSPACE/jayesh2/') {
+         dir("${env.WORKSPACE}/jayesh2") {
           script {
           sh 'npm install -g'
 	  sh 'npm test'
