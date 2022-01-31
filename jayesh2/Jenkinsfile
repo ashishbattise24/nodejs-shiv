@@ -13,8 +13,8 @@ pipeline {
 	registryCredential = "nodejs-cred"
     }
    
-   docker {
-     NodeJs 'nodejs'
+   tools {
+     nodejs 'nodejs'
    }	
 	
     stages {
